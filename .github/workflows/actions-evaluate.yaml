@@ -8,15 +8,13 @@ jobs:
     actions-rust-lang:
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@main
-        - uses: actions-rust-lang/setup-rust-toolchain@v1
+        - uses: actions-rust-lang/setup-rust-toolchain@main
         
     
     actions-rs:
         # deprecated: out of maintain
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@main
         - uses: actions-rs/toolchain@v1
           with:
             toolchain: stable
@@ -24,6 +22,7 @@ jobs:
     dtolnay:
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@v4
-        - uses: dtolnay/rust-toolchain@stable
+        - uses: dtolnay/rust-toolchain@master
+          with:
+              toolchain: stable
         
