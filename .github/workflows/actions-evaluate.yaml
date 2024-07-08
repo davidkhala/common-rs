@@ -3,7 +3,7 @@ jobs:
     moonrepo:
         runs-on: ubuntu-latest
         steps:
-        - uses: moonrepo/setup-rust@master
+        - uses: moonrepo/setup-rust@v1
         # - run: cargo test
     actions-rust-lang:
         runs-on: ubuntu-latest
