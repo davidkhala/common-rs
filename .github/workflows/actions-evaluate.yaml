@@ -4,29 +4,26 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - uses: moonrepo/setup-rust@v1
-        # - run: cargo test
+        
     actions-rust-lang:
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@main
         - uses: actions-rust-lang/setup-rust-toolchain@v1
-        # - run: cargo test
+        
     
     actions-rs:
+        # deprecated: out of maintain
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@main
         - uses: actions-rs/toolchain@v1
           with:
-            toolchain: nightly
-            override: true
-            components: rustfmt, clippy
-        - uses: actions-rs/cargo@master
-          with:
-            command: check
+            toolchain: stable
+
     dtolnay:
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@v4
         - uses: dtolnay/rust-toolchain@stable
-        # - run: cargo test --all-features
+        
