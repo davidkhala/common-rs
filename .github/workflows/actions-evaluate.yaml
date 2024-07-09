@@ -4,11 +4,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - uses: moonrepo/setup-rust@v1
-        
+                
     actions-rust-lang:
         runs-on: ubuntu-latest
         steps:
         - uses: actions-rust-lang/setup-rust-toolchain@main
+        
         
     
     actions-rs:
@@ -25,4 +26,4 @@ jobs:
         - uses: dtolnay/rust-toolchain@master
           with:
               toolchain: stable
-        
+        - run: cargo login
