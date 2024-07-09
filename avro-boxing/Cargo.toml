@@ -1,5 +1,5 @@
 [package]
-name = "avro"
+name = "avro-boxing"
 version = "0.1.0"
 edition = "2021"
 
