@@ -7,5 +7,5 @@ repository = "https://github.com/davidkhala/rust-collection/"
 license = "Apache-2.0"
 
 [dependencies]
-apache-avro = { version = "0.16.0"}
-bigdecimal = { version = "0.4.5" }
+apache-avro = "0.16.0"
+bigdecimal = "0.4.5"

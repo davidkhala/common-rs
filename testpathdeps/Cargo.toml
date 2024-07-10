@@ -3,5 +3,6 @@ name = "testpathdeps"
 version = "0.1.0"
 edition = "2021"
 
-[dependencies]
+[dev-dependencies]
 avro-boxing = { path = "../avro-boxing" }
+bigdecimal="*" # still need to specify this even in single workspace
