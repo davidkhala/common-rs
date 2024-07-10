@@ -1,0 +1,9 @@
+[package]
+name = "test2depthdeps"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dev-dependencies]
+bigdecimal = { version = "0.4.5" }
+
