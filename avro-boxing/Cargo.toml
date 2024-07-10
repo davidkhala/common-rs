@@ -1,7 +1,10 @@
 [package]
 name = "avro-boxing"
-version = "0.1.0"
+description = "avro data formater convertors"
+version = "0.0.0"
 edition = "2021"
+repository = "https://github.com/davidkhala/rust-collection/"
+license = "Apache-2.0"
 
 [dependencies]
 apache-avro = { version = "0.16.0"}

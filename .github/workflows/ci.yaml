@@ -1,0 +1,13 @@
+on: workflow_dispatch
+jobs:
+  avro-boxing:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: avro-boxing
+    steps:
+      - uses: actions/checkout@main
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: stable
+      - run: cargo test
