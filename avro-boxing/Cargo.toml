@@ -1,6 +1,6 @@
 [package]
 name = "avro-boxing"
-description = "avro data formater convertors"
+description = "avro data format convertors"
 version = "0.0.0"
 edition = "2021"
 repository = "https://github.com/davidkhala/rust-collection/"
