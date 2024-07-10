@@ -7,3 +7,4 @@ publish = false
 [dev-dependencies]
 avro-boxing = { version = "0.0.0" }
 
+[workspace]
