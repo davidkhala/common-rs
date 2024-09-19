@@ -7,7 +7,5 @@ jobs:
         working-directory: avro-boxing
     steps:
       - uses: actions/checkout@main
-      - uses: dtolnay/rust-toolchain@master
-        with:
-          toolchain: stable
+      - uses: davidkhala/setup-rs@main
       - run: cargo test
