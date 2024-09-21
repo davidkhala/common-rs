@@ -2,6 +2,6 @@
 resolver = "2"
 
 members = [
-    "avro-boxing",
+    "avro-boxing", "ssl",
     "testpathdeps"
 ]
