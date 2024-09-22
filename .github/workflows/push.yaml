@@ -8,4 +8,6 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - uses: davidkhala/setup-rs@main
-    - run: cargo build
+    - run: cargo check
+      env:
+        OPENSSL_DIR: C:\Program Files\OpenSSL
