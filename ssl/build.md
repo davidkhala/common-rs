@@ -8,3 +8,6 @@
 3. Install `link.exe` via Visual Studio Installer
    - It is included in **MSVC v143+ Build Tools**
 4. [Set environment](./win/desktop.ps1)
+
+## Github-hosted runner: windows-latest
+only `$env:OPENSSL_DIR="C:\Program Files\OpenSSL"` is required
