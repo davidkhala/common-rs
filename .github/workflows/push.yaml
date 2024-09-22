@@ -4,7 +4,7 @@ jobs:
     defaults:
       run:
         working-directory: ssl
-    runs-on: windows
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@main
     - uses: davidkhala/setup-rs@main

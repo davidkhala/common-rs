@@ -13,7 +13,7 @@ mod tests {
         use std::env;
 
         let mut handlers = vec![];
-        let text ="".to_string();
+        let text = "".to_string();
         handlers.push(std::thread::spawn(move || {
             println!("{:?}", env::var_os("HOME").unwrap());
             println!("{}", text)

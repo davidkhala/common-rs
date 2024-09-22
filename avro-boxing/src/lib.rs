@@ -1,9 +1,9 @@
 use std::convert::TryFrom;
 
 use apache_avro::Decimal;
-use bigdecimal::BigDecimal;
-use bigdecimal::num_bigint::{BigInt};
+use bigdecimal::num_bigint::BigInt;
 use bigdecimal::num_traits::FromBytes;
+use bigdecimal::BigDecimal;
 
 pub fn to_bigdecimal(avro_d: Decimal) -> BigDecimal {
     let bytes = <Vec<u8>>::try_from(avro_d).unwrap();
@@ -13,9 +13,9 @@ pub fn to_bigdecimal(avro_d: Decimal) -> BigDecimal {
 
 #[cfg(test)]
 mod tests {
-    use bigdecimal::num_traits::{ToBytes};
-    use bigdecimal::num_bigint::{ToBigInt};
     use super::*;
+    use bigdecimal::num_bigint::ToBigInt;
+    use bigdecimal::num_traits::ToBytes;
 
     fn bigint_100() -> BigInt {
         return 100.to_bigint().unwrap();
@@ -54,7 +54,6 @@ mod tests {
     fn test_avro2big() {
         let avro_d = Decimal::from(bigint_100().to_be_bytes());
         let bytes = <Vec<u8>>::try_from(avro_d).unwrap();
-
 
         let big_decimal = BigDecimal::from(BigInt::from_be_bytes(&bytes));
         assert_eq!(big_decimal.to_string(), "100");
